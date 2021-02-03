@@ -9,7 +9,7 @@ Set the input parameters:
 
 -Precision of trajectory (in ps): 20
 
--Number of the first water residue: 147 
+-Number of the first water residue: 800 
 
 
 Results: You must find the following events in Permeation_events.txt file
