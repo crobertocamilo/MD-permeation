@@ -4,14 +4,14 @@ MD-permeation: a FORTRAN code to analyze MD simulation trajectories and identify
 
 
 
-LIST OF AUTHORS      
+## List of Authors      
 
-   Carlos R. S. Camilo, José R. Ruggiero, Alexandre S. de Araujo    
+   Carlos R. S. Camilo, José R. Ruggiero, and Alexandre S. de Araujo    
    Department of Physics, IBILCE, São Paulo State University (UNESP)  
 
 
 
-CITATION
+## Citation
 
    If you use MD-permeation in your research, we ask that you cite the following article:  
 
