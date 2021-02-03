@@ -1,0 +1,55 @@
+
+---INSTRUCTIONS for MD-PERMEATION analysis---
+ 
+
+-PREPARATION-
+
+Download and compile the Fortran code.
+
+The program analyzes trajectories in the GRO format. For trajectories in NAMD DCD format, it is necessary to convert them to GRO (you can use the VMD's Tk-console). 
+
+The bilayer should be in the xy-plane and ideally centered with respect to the z-axis (the center of the bilayer should be close to the center of the simulation box). If necessary, use -trans option from GROMAC's trjconv, or -rotate and -translate options from editconf, to adjust the trajectory. VMD's Tk-console also allows you the make adjustments to the simulation box. 
+
+Create an index group that contains all the oxygen atoms of the water molecules. It should be named OW.gro
+
+Create an index group that contains the P atom of all phospholipids of the bilayer. If there are two or more lipids of different atomtypes nomenclatures (P8, P9, etc.) unify in the same index group. This file must be named P.gro and must contain exactly the same number of frames as OW.gro 
+
+Put OW.gro and P.gro in the same folder as the program. Run the executable file and enter the input parameters.
+
+
+-INPUT PARAMETERS-
+
+-Estimate for the center of the bilayer at t = 0: If the bilayer is centered, it will be equal to (Lz/2) of the initial frame.
+
+-Simulation size (in ns).
+
+-Precision of trajectory (in ps).
+
+-Number of first water residue. This number is essential for the correct identification of the water molecules that participate in permeation events. For example, if the first water molecule is 129SOL, type 129.
+
+
+-OUTPUT FILES-
+
+Permeation_events.txt shows all events detected in the simulation, informing the residue, inital_t and final_t and also the duration of the event.
+
+Counting_events.txt reports the event count over the simulation time.
+
+Thickness.txt shows the average position at each instant of the two leaflets of the bilayer (P-plane).
+
+(If requested) Individual clipping for trajectory of each permeation event, with z-coordinate centered relative to the center of the bilayer.
+
+
+For mapping the events:
+Import the Thickness.txt file and individual event files (residueSOL.txt) you want into a graphics program (xmgrace, qtiplot, etc.). Mark all columns "t" as x-coordinates. Then plot "ztop-center" "zlower-center" fields and the "z" coordinate of each imported event in the same graph.
+
+
+
+-CITATION-
+
+If you use MD-permeation in your research, we ask that you cite the following article:
+
+C.R.S. Camilo, J.R. Ruggiero, and A.S. de Araujo. 2021. A method for detection of permeation events in Molecular Dynamics simulations of lipid bilayers. bioRxiv doi:10.1101/2021.01.20.427278
+
+
+
+
