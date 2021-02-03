@@ -1,0 +1,19 @@
+
+Copy the appropriate version of the program to the "Example" folder.
+
+Set the input parameters:
+
+-Estimate for the bilayer center: 4
+
+-Simulation size (in ns): 9
+
+-Precision of trajectory (in ps): 20
+
+-Number of the first water residue: 147 
+
+
+Results: You must find the following events in Permeation_events.txt file
+
+        Resid  Initial_t(ns)    Final_t(ns)     dt(ns)
+        1071   7.61999989       8.14000034      0.520000458    
+        1111   5.03999996       8.26000023       3.22000027   
