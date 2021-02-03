@@ -1,17 +1,17 @@
 # MD-permeation
 
-MD-permeation: a FORTRAN code to analyze MD simulation trajectories and identify permeation events for water molecules.   
+MD-permeation: a FORTRAN code to analyze MD simulation trajectories and identify water permeation events in lipid bilayers.   
 
 
 
-List of Authors      
+LIST OF AUTHORS      
 
    Carlos R. S. Camilo, José R. Ruggiero, Alexandre S. de Araujo    
    Department of Physics, IBILCE, São Paulo State University (UNESP)  
 
 
 
-Citation  
+CITATION
 
    If you use MD-permeation in your research, we ask that you cite the following article:  
 
