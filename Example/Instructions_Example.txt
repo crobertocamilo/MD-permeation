@@ -1,5 +1,5 @@
 
-Copy the appropriate version of the program to the "Example" folder.
+Copy the compiled (executable) version of the program to the "Example" folder and run.
 
 Set the input parameters:
 
