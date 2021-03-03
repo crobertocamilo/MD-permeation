@@ -313,8 +313,10 @@ c      close(13)
       open(16,file='Counting_events.txt',status='unknown')
 
       if(nevent.ne.0)then
-         write(16,*)"Permeation events over simulation time."
-         write(16,*)'t(ns)',' Number of events'
+	    write(16,*)"Permeation events over simulation time."
+            write(16,*)'t(ns)',' Number of events'
+         else
+	    go to 404
       endif
 
       do l=1,nframes
@@ -344,7 +346,7 @@ c      close(13)
          t=ti+(t-1)/(1000/ps)
          write(16,*)t,count_ev(m)
       enddo   
-      
+
 
       write(*,*)"Do you want to map each event's individual trajectory?"
       write(*,*)"This may take several minutes! (y/n)?"
@@ -354,7 +356,7 @@ c      close(13)
 
       if((resp=="y").or.(resp=="yes"))then
 
-         do l=1,natom
+         do l=1,(natom+gap_res)
             contP(l)=0      
          enddo
 
@@ -431,7 +433,7 @@ c    	 write(*,*)
       endif
 
 
-      close(10)
+404   close(10)
       close(20)
       close(11)
       close(16)
@@ -442,4 +444,5 @@ c    	 write(*,*)
 
       stop
       end
+
 
