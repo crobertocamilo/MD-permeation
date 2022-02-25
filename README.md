@@ -15,4 +15,4 @@ MD-permeation is a FORTRAN code to analyze MD simulation trajectories and identi
 
    If you use MD-permeation in your research, we ask that you cite the following article:  
 
-   C.R.S. Camilo, J.R. Ruggiero, and A.S. de Araujo. 2021. A method for detection of permeation events in Molecular Dynamics simulations of lipid bilayers. bioRxiv doi:10.1101/2021.01.20.427278
+   Camilo, C.R.d.S., Ruggiero, J.R. & de Araujo, A.S. A Method for Detection of Water Permeation Events in Molecular Dynamics Simulations of Lipid Bilayers. Braz J Phys 52, 62 (2022). https://doi.org/10.1007/s13538-022-01071-1
